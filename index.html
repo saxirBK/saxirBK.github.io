@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK's web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Mis Proyectos</h1>
+    </header>
+    <div class="container">
+        <h2>Proyectos</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="imgs/project1.png" alt="AdBlocker">
+                <h3>Ad Blocker.</h3>
+                <p>Estaba cansado de que en cualquier página que entraba saltasen un monton de anuncios asi que cree el mio
+                   sencillo pero funcional.
+                </p>
+                <a href="AdBlockerBK.zip" download>Descargar AdBlocker.</a>
+            </div>
+            <div class="project">
+                <img src="imgs/cokie.png" alt="Proyecto 2" class="small-image">
+                <h3>Cookie Injector.</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="desarollo.html" download>Descargar Injector.</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024-2025. Saxir.inh Todos los derechos reservados.</p>
+    </footer>
+</body>
+<style>
+    body {
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight:1000;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        text-align: center;
+    }
+    header {
+        background: #333;
+        color: white;
+        padding: 1px;
+        font-size: 2rem;
+    }
+    h2{
+        font-weight: bolder;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px;
+    }
+    @media (min-width: 768px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+    .project {
+        width: 90%;
+        max-width: 500px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        min-height: 250px;
+    }
+    .project img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .project:first-child img,
+    .project:nth-child(2) img.small-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .project h3 {
+        font-size: 1.8rem;
+    }
+    .project p {
+        font-size: 1.2rem;
+    }
+    .project a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        color: white;
+        background: #007BFF;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .project a:hover {
+        background: #0056b3;
+    }
+    footer {
+        background: #222;
+        color: white;
+        padding: 15px;
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+</style>
+</html>
+
